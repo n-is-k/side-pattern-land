@@ -1,17 +1,22 @@
 import React, { useState, useRef } from "react";
+import classNames from 'classnames';
+import TypingText from "./Components/TypeWriter";
+
 import "./App.css";
 import logo from "./images/side-spray-tr2.png";
+// import logo from "./images/side-spray-btr.png";
 
 const App = () => {
+
   const [isLoading, setIsLoading] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const formRef = useRef(null);
 
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbynkI9pPiSAfzt4-x6GUMvfSQ0jLPC7OoA9DkHX1tRL8AR92zzqWBk3leQHXFJfrADTVw/exec";
-
-  const postData = () => {
+"https://script.google.com/macros/s/AKfycbzXBEjRRJIREhfIgVxj5pUMkljpDYTMKq8rdEUPq9NYS99NUBiog6xjMnKRcGgiWTzY/exec"
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setIsLoading(true);
 
     fetch(scriptUrl, {
@@ -25,57 +30,41 @@ const App = () => {
       .catch((error) => console.log(error));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    postData();
-  };
-
-  const debounce = (func, delay) => {
-    let timer;
-
-    return () => {
-      clearTimeout(timer);
-      timer = setTimeout(() => func(), delay);
-    };
-  };
-
-  const debouncedPost = debounce(postData, 1000);
-  // Decide to debounce or disable the inputs while loading is true 🫡
-
   return (
-    <div className="app">
+    <div className="app background-b">
       <div>
+        <div className="container-1"> 
+        </div>
         <div className="app--logo-wrapper">
           <img src={logo} alt="logo" className="app--logo-image" />
         </div>
-
+        <div className="typing"> <TypingText /></div>
         <div className="app--content">
           {formSubmitted ? (
-            <p>Ta xx</p>
+            <>
+              {/* <p className="paragraph">Bless</p>  */}
+             <p className="paragraph">Welcome to Side Pattern.</p> 
+            </>
           ) : (
             <>
-              {isLoading ? <p>Loading...</p> : <p>Pls fill:</p>}
-              <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  required
-                  disabled={isLoading}
-                />
+              <form ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="form">
                 <input
                   type="email"
                   name="email"
+                  autocomplete="off"
                   placeholder="Email"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder = 'Email'" 
                   required
-                  disabled={isLoading}
+                  className={`field ${isLoading ? "hidden" : ""}`}
                 />
-                <button type="submit" name="submit" disabled={isLoading}>
-                  Submit
+                <button type="submit" name="submit" className="button" disabled={isLoading}>
+                  {isLoading ? "Please wait..." : "Submit"}
                 </button>
               </form>
             </>
           )}
+          
         </div>
       </div>
     </div>
