@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/n-is-k/side-pattern-land.git/static/css/main.ef5998d2.css",
+    "main.js": "/n-is-k/side-pattern-land.git/static/js/main.884215de.js",
+    "static/js/787.e9b54d54.chunk.js": "/n-is-k/side-pattern-land.git/static/js/787.e9b54d54.chunk.js",
+    "static/media/side-spray-tr2.png": "/n-is-k/side-pattern-land.git/static/media/side-spray-tr2.b5ef87d1c93bfb037ee7.png",
+    "static/media/FragmentMono-Italic.ttf": "/n-is-k/side-pattern-land.git/static/media/FragmentMono-Italic.dd408ce5edc9f47abccc.ttf",
+    "static/media/FragmentMono-Regular.ttf": "/n-is-k/side-pattern-land.git/static/media/FragmentMono-Regular.7169c93798423421b046.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/n-is-k/side-pattern-land.git/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/Righteous-Regular.ttf": "/n-is-k/side-pattern-land.git/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/n-is-k/side-pattern-land.git/index.html",
+    "main.ef5998d2.css.map": "/n-is-k/side-pattern-land.git/static/css/main.ef5998d2.css.map",
+    "main.884215de.js.map": "/n-is-k/side-pattern-land.git/static/js/main.884215de.js.map",
+    "787.e9b54d54.chunk.js.map": "/n-is-k/side-pattern-land.git/static/js/787.e9b54d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef5998d2.css",
+    "static/js/main.884215de.js"
+  ]
+}
