@@ -77,6 +77,7 @@ text-align: center;
 .typing {
   margin:auto;
   width:50%;
+  font-size: .7rem;
   text-align: center;
   position: relative;
   height:2rem;
@@ -108,7 +109,6 @@ text-align: center;
 }
 
 .typewriter {
-  font-size: .7rem;
   color: rgb(191, 191, 191);
   position: relative;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -228,11 +228,9 @@ text-align: center;
       width: 100vw;
     }
 
-    .typewriter{
-      font-size: .7rem;
-    }
     .typing{
       width:80%;
+      font-size: 1rem;
     }
   .form{
     flex-wrap: wrap;
@@ -249,8 +247,13 @@ text-align: center;
   .button {
     width: 100%;
   }
-
-  
 }
 
+@media screen and (max-width: 700px) {
+.typing{
+  height:auto;
+  font-size: 1rem;
+}
+
+}
    
