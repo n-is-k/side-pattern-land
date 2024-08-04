@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/www.sidepattern.com/static/css/main.188137d9.css",
+    "main.js": "/www.sidepattern.com/static/js/main.86dbacec.js",
+    "static/js/787.e9b54d54.chunk.js": "/www.sidepattern.com/static/js/787.e9b54d54.chunk.js",
+    "static/media/side-spray-tr2.png": "/www.sidepattern.com/static/media/side-spray-tr2.b5ef87d1c93bfb037ee7.png",
+    "static/media/FragmentMono-Italic.ttf": "/www.sidepattern.com/static/media/FragmentMono-Italic.dd408ce5edc9f47abccc.ttf",
+    "static/media/FragmentMono-Regular.ttf": "/www.sidepattern.com/static/media/FragmentMono-Regular.7169c93798423421b046.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/www.sidepattern.com/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/Righteous-Regular.ttf": "/www.sidepattern.com/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/www.sidepattern.com/index.html",
+    "main.188137d9.css.map": "/www.sidepattern.com/static/css/main.188137d9.css.map",
+    "main.86dbacec.js.map": "/www.sidepattern.com/static/js/main.86dbacec.js.map",
+    "787.e9b54d54.chunk.js.map": "/www.sidepattern.com/static/js/787.e9b54d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.188137d9.css",
+    "static/js/main.86dbacec.js"
+  ]
+}
