@@ -13,8 +13,14 @@ const App = () => {
 
   const formRef = useRef(null);
 
-  const scriptUrl =
-"https://script.google.com/macros/s/AKfycbzXBEjRRJIREhfIgVxj5pUMkljpDYTMKq8rdEUPq9NYS99NUBiog6xjMnKRcGgiWTzY/exec"
+  const scriptUrl = 
+// "https://script.google.com/macros/s/AKfycbzXBEjRRJIREhfIgVxj5pUMkljpDYTMKq8rdEUPq9NYS99NUBiog6xjMnKRcGgiWTzY/exec"
+// "https://script.google.com/macros/s/AKfycbzxVlj5qv10deEw0RlYCi-aJPnEWR1GhIYKHzn1D4pJNH9DxCJOx3VO8u16GeNUkp9H/exec"
+// "https://script.google.com/macros/s/AKfycbyzIcVIDQksVy-S0o5gm5lUihfRUIx7yiwOZTqmYCDRaVWnpTNWHRPDW3_LzB6FxXjm/exec"
+// "https://script.google.com/macros/s/AKfycbymHAYbsm1QiZw9Jg38V7G5MH0d1cHrvK13K986T9zjFbFRDbOmTcP1pnv2vhoxN-3U/exec"
+// "https://script.google.com/macros/s/AKfycby9EqJTvGjLzDYoWMuNgLTKKaTTDYrfzylUGjANCDDCMf1iTRvgVtl6fbFEK5F7Lk_0/exec"npm
+"https://script.google.com/macros/s/AKfycbyI6H3FqH9F2yXSAwi1LQV2lHDoYdTzzF-jdMCQPvxi82YUYDPPeHMv2p8fBtzkqfVc/exec"
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -48,6 +54,26 @@ const App = () => {
           ) : (
             <>
               <form ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="form">
+              <input
+                  type="first"
+                  name="first"
+                  autocomplete="off"
+                  placeholder="First Name"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder = 'First Name'" 
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+                  <input
+                  type="last"
+                  name="last"
+                  autocomplete="off"
+                  placeholder="Last Name"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder = 'Last Name'" 
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
                 <input
                   type="email"
                   name="email"
