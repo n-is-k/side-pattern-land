@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import classNames from 'classnames';
 import TypingText from "./Components/TypeWriter";
-
+import VideoPlayer from "./Components/VideoPlayer";
 import "./App.css";
-import logo from "./images/side-spray-tr2.png";
+// import logo from "./images/side-spray-tr2.png";
 // import logo from "./images/side-spray-btr.png";
+import logo from "./images/echo-title.png";
 
 const App = () => {
 
@@ -37,19 +37,28 @@ const App = () => {
   };
 
   return (
-    <div className="app background-b">
+
+
+    <div className="app">
+      {/* <VideoPlayer></VideoPlayer> */}
       <div>
-        <div className="container-1"> 
-        </div>
+        <div className=""> 
+                  </div>
         <div className="app--logo-wrapper">
-          <img src={logo} alt="logo" className="app--logo-image" />
+          {/* <img src={logo} alt="logo" className="app--logo-image" /> */}
         </div>
-        <div className="typing"> <TypingText /></div>
-        <div className="app--content">
+        {/* <div className="typing"> <TypingText /></div> */}
+        <div className="sticker">
+          <img src={logo} alt="logo" className="app--logo-image"></img>
+        </div>
+        
+      </div>
+      <div className="form">
+          <div className="app--content">
           {formSubmitted ? (
             <>
               {/* <p className="paragraph">Bless</p>  */}
-             <p className="paragraph">Welcome to Side Pattern.</p> 
+             <p className="paragraph">Submitted.</p> 
             </>
           ) : (
             <>
@@ -92,8 +101,9 @@ const App = () => {
           )}
           
         </div>
-      </div>
+        </div>
     </div>
+    
   );
 };
 
