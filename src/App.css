@@ -2,7 +2,6 @@
   padding: none;
   /* margin: auto; */
   box-sizing: border-box;
-
 }
 
 .background-w {
@@ -13,41 +12,36 @@
   background-color: #000;
 }
 
-.video-container{
+.video-container {
   position: fixed;
 }
 
 .form {
   position: fixed;
-  bottom:100px;
+  bottom: 5px;
   margin-left: auto;
   margin-right: auto;
-  width:300px;
-  justify-content: ;
+  width: 300px;
+  /* height: 100px; */
 }
 
 .container-1 {
-padding:10px;
-margin: auto;
-width:25vw;
-text-align: center;
+  padding: 10px;
+  margin: auto;
+  width: 25vw;
+  text-align: center;
 }
 
 video {
-	margin: 30px;
-	width: 500px;
-	max-width: 85%;
+  margin: 30px;
+  width: 500px;
+  max-width: 85%;
 }
 
-.background-container{
+.background-container {
   columns: 2;
-  width:100vw;
-  height:100vh;
-}
-
-
-.background-video {
-  
+  width: 100vw;
+  height: 100vh;
 }
 
 /* .box1{
@@ -63,7 +57,6 @@ video {
   src: url(./Fonts/BebasNeue-Regular.ttf);
   font-weight: regular;
 }
-
 
 @font-face {
   font-family: Righteous;
@@ -83,7 +76,6 @@ video {
   font-weight: italic;
 }
 
-
 @keyframes bganimation {
   0% {
     background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
@@ -99,20 +91,21 @@ video {
 }
 
 .typing {
-  margin:auto;
-  width:50%;
-  font-size: .7rem;
-  text-align: center;
+  margin-top: 15px;
+  width: 30%;
   position: relative;
-  height:2rem;
-  margin-bottom: 50px;
-  z-index: 1;
+  font-size: 0.7rem;
+  margin-left: 10px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 50px;
 }
 
 .app {
   max-width: 100vw;
   height: 100vh;
-   background: 
+  background: 
   /* radial-gradient(
       ellipse at center,
       rgba(233, 233, 233, 0.3) 30%,
@@ -122,24 +115,24 @@ video {
         ellipse at center,
         rgba(255, 255, 255, 0.94) 10%,
         rgba(0, 0, 0, 0) 60%
-      )  */
-      #000000;
+      )  */ #000000;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
   background-attachment: fixed;
   animation: bganimation 30s infinite;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .typewriter {
   color: rgb(191, 191, 191);
   position: relative;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-family: Bebas;
   /* font-family: Righteous; */
-  font-family:FragmentMono;
+  font-family: FragmentMono;
 }
 
 .app--logo-wrapper {
@@ -152,19 +145,18 @@ video {
   width: 50rem;
   vertical-align: middle;
   margin: auto;
-  opacity: .6;
-  transition: .3s;
-  }
+  opacity: 0.6;
+  transition: 0.3s;
+}
 
-  .app--logo-image:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-
+.app--logo-image:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
 .app--content {
   text-align: center;
-  width:50vw;
+  width: 50vw;
   margin: auto;
 }
 
@@ -172,16 +164,19 @@ video {
   display: none;
 }
 
-.form{
-  display: flex;
-  margin-top: ;
+.form {
+  display: block;
+  width: auto;
   justify-content: center;
   text-align: left;
+  bottom: 5px;
+  right: 5px;
+  z-index: 3;
 }
 
 .field {
-  width: 200px;
-  height: 40px;
+  width: 150px;
+  height: 30px;
   padding-left: 3px;
   float: left;
   color: #000000;
@@ -190,113 +185,106 @@ video {
   border: 0 solid #000;
   border-radius: 0;
   margin-bottom: 0;
-  margin-right: 3%;
+  margin-right: 5px;
   font-family: Inconsolata, monospace;
-  font-size: 16px;
-  transition: background-color .3s, box-shadow .3s ;
+  font-size: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .31), inset 0 2px 9px -1px rgba(0, 0, 0, .14), 0 0 0 1px rgba(255, 255, 255, .09), 0 1px rgba(255, 255, 255, .13);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.31),
+    inset 0 2px 9px -1px rgba(0, 0, 0, 0.14),
+    0 0 0 1px rgba(255, 255, 255, 0.09), 0 1px rgba(255, 255, 255, 0.13);
 }
 
-
-.field:focus{
+.field:focus {
   outline: none;
-  border: 1.5px solid #555
+  border: 1.5px solid #555;
 }
 
-  .button {
-    height: 40px;
-    float: left;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px rgba(0, 0, 0, .19);
-    background-color: #20202047;
-    /* border-radius: 20px; */
-    padding: 4px 29px;
-    font-family: Inconsolata, monospace;
-    font-size: 14px;
-    font-weight: 300;
-    text-decoration: none;
-    transition: background-color .3s;
-    display: block;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 0 1px rgba(0, 0, 0, .11), inset 0 0 0 1px rgba(255, 255, 255, .08), inset 0 1px rgba(255, 255, 255, .16), inset 0 -44px 38px -25px rgba(0, 0, 0, .09);
+.button {
+  height: 30px;
+  float: left;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.19);
+  background-color: #20202047;
+  /* border-radius: 20px; */
+  padding: 4px 29px;
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: block;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.11),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.16),
+    inset 0 -44px 38px -25px rgba(0, 0, 0, 0.09);
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
 }
 
-.paragraph{
-    font-family: Inconsolata, monospace;
-    font-size: 14px;
-    position: static;
-    letter-spacing: 0;
-    text-shadow: none;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: #fff;
+.paragraph {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  position: static;
+  letter-spacing: 0;
+  text-shadow: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 @media screen and (max-width: 900px) {
-  .app--logo-image{
+  .app--logo-image {
     width: 600px;
   }
 
-  .field{
-    /* flex-grow: 100%;  */
-    /* width:60%; */
-}}
-
   @media screen and (max-width: 700px) {
-    .app--logo-image{
+    .app--logo-image {
       width: 80vw;
       margin-bottom: 200px;
     }
-    
 
-    .typing{
-      width:80%;
+    .typing {
+      width: 80%;
       font-size: 1rem;
     }
-  .form{
-    flex-wrap: wrap;
-    /* width: 80%; */
-    margin: auto;
-    
-  }
-  .field{
-    margin:5px;
-    margin-bottom: 15px;
-    width:100%;
+    .form {
+      flex-wrap: wrap;
+      /* width: 80%; */
+      margin: auto;
+    }
+    .field {
+      margin: 5px;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .button {
+      width: 100%;
+    }
   }
 
-  .button {
-    width: 100%;
+  @media screen and (max-width: 700px) {
+    .typing {
+      height: auto;
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .app--content {
+      margin: unset;
+    }
+
+    .form {
+      display: block;
+    }
+
+    .app--logo-image {
+      margin-bottom: 40px;
+    }
   }
 }
-
-@media screen and (max-width: 700px) {
-.typing{
-  height:auto;
-  font-size: 1rem;
-}
-
-}
-@media screen and (max-width:430px) {
-  .app--content {
-    margin:unset;
-  }
-
-  .form {
-    display: block;
-  }
-
-  ..app--logo-image{
-    margin-bottom: 40px;
-  }
-}
-
-
-
-   
