@@ -69,6 +69,27 @@ const App = () => {
                 className="form"
               >
                 <input
+                  type="first"
+                  name="first"
+                  autocomplete="off"
+                  placeholder="First Name"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder = 'First Name'"
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+                <input
+                  type="last"
+                  name="last"
+                  autocomplete="off"
+                  placeholder="Last Name"
+                  onfocus="this.placeholder=''"
+                  onblur="this.placeholder = 'Last Name'"
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+
+                <input
                   type="email"
                   name="email"
                   autocomplete="off"
