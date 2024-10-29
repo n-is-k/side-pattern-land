@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import TypingText from "./Components/TypeWriter";
 import VideoPlayer from "./Components/VideoPlayer";
 import "./App.css";
+import Header from "./Components/Header";
 // import logo from "./images/side-spray-tr2.png";
 // import logo from "./images/side-spray-btr.png";
 import logo from "./images/side-spray-tr2.png";
@@ -37,11 +38,11 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="typing">
-        {" "}
-        <TypingText />
+      <div className="logo-container">
+        <img src={logo} alt="logo" className="app--logo-image" />
       </div>
       {/* <VideoPlayer></VideoPlayer> */}
+      <Header />
       <div>
         <div className=""></div>
         <div className="app--logo-wrapper">
