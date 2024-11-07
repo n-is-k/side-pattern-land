@@ -137,18 +137,20 @@ video {
   color: white;
   /* width: 30%; */
   position: relative;
-  font-size: 0.7rem;
+  font-size: 1rem;
   text-align: left;
   position: relative;
   z-index: 2;
   color: black;
   padding-bottom: 10px;
+  /* background-color: yellow; */
 }
 
 .app {
   max-width: 100vw;
   height: 100vh;
-  background: radial-gradient(
+  background: 
+  /* radial-gradient(
       ellipse at center,
       rgba(233, 233, 233, 0.3) 30%,
       rgba(226, 5, 5, 0) 60%
@@ -157,8 +159,7 @@ video {
         ellipse at center,
         rgba(255, 255, 255, 0.94) 10%,
         rgba(0, 0, 0, 0) 60%
-      )
-      #000000;
+      ) */ #000000;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 600px 600px, 600px 600px, 600px 600px;
   background-attachment: fixed;
@@ -184,7 +185,7 @@ video {
 
 .app--logo-image {
   object-fit: contain;
-  width: 100px;
+  width: 200px;
   vertical-align: middle;
   margin: auto;
   opacity: 1;
