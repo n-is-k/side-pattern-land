@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb9b8e9a.css",
-    "main.js": "/static/js/main.1fcf4856.js",
-    "static/js/787.e9b54d54.chunk.js": "/static/js/787.e9b54d54.chunk.js",
-    "static/media/side-spray-tr2.png": "/static/media/side-spray-tr2.b5ef87d1c93bfb037ee7.png",
-    "static/media/FragmentMono-Italic.ttf": "/static/media/FragmentMono-Italic.dd408ce5edc9f47abccc.ttf",
-    "static/media/FragmentMono-Regular.ttf": "/static/media/FragmentMono-Regular.7169c93798423421b046.ttf",
-    "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
-    "static/media/Righteous-Regular.ttf": "/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
-    "index.html": "/index.html",
-    "main.cb9b8e9a.css.map": "/static/css/main.cb9b8e9a.css.map",
-    "main.1fcf4856.js.map": "/static/js/main.1fcf4856.js.map",
-    "787.e9b54d54.chunk.js.map": "/static/js/787.e9b54d54.chunk.js.map"
+    "main.css": "/side-pattern-land/static/css/main.7b83be72.css",
+    "main.js": "/side-pattern-land/static/js/main.9ced5c7e.js",
+    "static/js/787.e9b54d54.chunk.js": "/side-pattern-land/static/js/787.e9b54d54.chunk.js",
+    "static/media/side-spray-tr2.png": "/side-pattern-land/static/media/side-spray-tr2.b5ef87d1c93bfb037ee7.png",
+    "static/media/FragmentMono-Italic.ttf": "/side-pattern-land/static/media/FragmentMono-Italic.dd408ce5edc9f47abccc.ttf",
+    "static/media/FragmentMono-Regular.ttf": "/side-pattern-land/static/media/FragmentMono-Regular.7169c93798423421b046.ttf",
+    "static/media/BebasNeue-Regular.ttf": "/side-pattern-land/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
+    "static/media/Righteous-Regular.ttf": "/side-pattern-land/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
+    "index.html": "/side-pattern-land/index.html",
+    "main.7b83be72.css.map": "/side-pattern-land/static/css/main.7b83be72.css.map",
+    "main.9ced5c7e.js.map": "/side-pattern-land/static/js/main.9ced5c7e.js.map",
+    "787.e9b54d54.chunk.js.map": "/side-pattern-land/static/js/787.e9b54d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb9b8e9a.css",
-    "static/js/main.1fcf4856.js"
+    "static/css/main.7b83be72.css",
+    "static/js/main.9ced5c7e.js"
   ]
 }
