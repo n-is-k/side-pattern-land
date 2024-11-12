@@ -82,6 +82,14 @@ p {
   /* height: 100px; */
 }
 
+.footer {
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+}
+
 .container-1 {
   padding: 10px;
   margin: auto;
@@ -154,7 +162,7 @@ video {
   background-color: black;
   z-index: 10;
   opacity: 1; /* Start fully visible */
-  animation: fadeOut 2s 1s forwards; /* Fade out over 1 second, adjust as needed */
+  animation: fadeOut 0.5s 1s forwards; /* Fade out over 1 second, adjust as needed */
 }
 
 @keyframes fadeOut {
@@ -241,11 +249,12 @@ video {
 
 .time-date {
   color: white;
-  margin-left: 10px;
   bottom: 0px;
   right: 10px;
   font-size: 5rem;
-  position: absolute;
+  position: relative;
+  width: auto;
+  float: right;
   /* background-image: url("./images/smoke2.gif");
   background-clip: text;
   background-size: 100%;
