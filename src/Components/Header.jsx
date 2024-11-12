@@ -10,12 +10,12 @@ function Header() {
           <TypingText />
         </div>
       </div>
-      <div className="header-nav">
+      {/* <div className="header-nav">
         <div className="typing"> </div>
         <div className="navigation">
           <ul></ul>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

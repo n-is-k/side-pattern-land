@@ -7,7 +7,7 @@ class TypingText extends React.Component {
       // Passing in text.
 
       <div>
-        <TypeWriter typing={1.5} class={"typewriter"}>
+        {/* <TypeWriter typing={1.5} class={"typewriter"}>
           Side Pattern is an art, design & media office based in Amsterdam. It
           advances an approach to art and cultural production that is research
           oriented and people focussed - reflective of over a decade of
@@ -18,7 +18,22 @@ class TypingText extends React.Component {
           Design Week, Sandberg Instituut, Design Academy Eindhoven, British
           Council, Whitechapel Gallery, University of Bristol & International
           Curators Forum.
-        </TypeWriter>
+        </TypeWriter> */}
+        <p>
+          Side Pattern is an art, design & media office based in Amsterdam. It
+          advances an approach to art and cultural production that reflects
+          what's happening outside. Reflective of over a decade initiating,
+          consulting and leading on projects across art, design, culture,
+          fashion, media and education the office provides a bespoke consultancy
+          service rooted in an ongoing line of cultural research.. Featured on
+          Guap Magazine & Black Discourse. Selected clients include Nike, New
+          Balance, Daily Paper, Double A Magazine, Nieuwe Instituut, Dutch
+          Design Week, Sandberg Instituut, Design Academy Eindhoven, British
+          Council, Whitechapel Gallery, University of Bristol & International
+          Curators Forum. Side Pattern is currently made up of Kirtis Clarke,
+          Zaina Pakabomba & Liam Wilson alongside our network of artists,
+          cultural practitioners designers and researchers.
+        </p>
       </div>
     );
   }
