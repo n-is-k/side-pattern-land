@@ -8,6 +8,8 @@ import Splash from "./Components/Splash";
 import Form from "./Components/Popup";
 import TimeDate from "./Components/TimeDate";
 import Footer from "./Components/Footer";
+import MovingText from "./Components/MovingText";
+import Popup from "./Components/Popup";
 
 const App = () => {
   useEffect(() => {
@@ -44,10 +46,12 @@ const App = () => {
 
   return (
     <div className="app">
+      <Popup />
       <Splash className="splash-page" />
       <div className="logo-container">
         {/* <img src={logo} alt="logo" className="app--logo-image" /> */}
       </div>
+      <MovingText />
       <Header />
       <Footer />
       {/* <Form /> */}

@@ -1,5 +1,21 @@
 /* Header */
 
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.popup {
+  /* position:absolute;
+  left:50%;
+  top:50%;
+  width:30%;
+  height:50%; */
+  color: white;
+}
+
 .logo-container {
   height: auto;
   /* background-color: #808080; */
@@ -79,6 +95,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
+  color: white;
   /* height: 100px; */
 }
 
@@ -160,7 +177,7 @@ video {
   height: 100vh;
   position: fixed;
   background-color: black;
-  z-index: 10;
+  z-index: 11;
   opacity: 1; /* Start fully visible */
   animation: fadeOut 0.5s 1s forwards; /* Fade out over 1 second, adjust as needed */
 }
@@ -255,6 +272,7 @@ video {
   position: relative;
   width: auto;
   float: right;
+  z-index: 10;
   /* background-image: url("./images/smoke2.gif");
   background-clip: text;
   background-size: 100%;
@@ -286,7 +304,7 @@ video {
   height: 30px;
   padding-left: 3px;
   float: left;
-  color: #000000;
+  color: white;
   text-align: left;
   background-color: rgba(250, 250, 250, 0.093);
   border: 0 solid #000;
@@ -348,6 +366,14 @@ video {
   .app--logo-image {
     width: 600px;
   }
+  .form {
+    display: none;
+    left: 0px;
+  }
+
+  .moving-text {
+    display: none;
+  }
 
   @media screen and (max-width: 700px) {
     .app--logo-image {
@@ -363,11 +389,17 @@ video {
       flex-wrap: wrap;
       /* width: 80%; */
       margin: auto;
+      width: -webkit-fill-available;
+      display: none;
+      margin-bottom: 50px;
+      left: 0px;
     }
+
     .field {
-      margin: 5px;
+      margin: 0px;
       margin-bottom: 15px;
-      width: 100%;
+      width: 50vw;
+      left: 0px;
     }
 
     .button {
@@ -390,10 +422,6 @@ video {
   @media screen and (max-width: 430px) {
     .app--content {
       margin: unset;
-    }
-
-    .form {
-      display: block;
     }
 
     .app--logo-image {

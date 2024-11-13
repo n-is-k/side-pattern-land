@@ -37,6 +37,7 @@ class TypingText extends React.Component {
           currently Kirtis Clarke, Zaina Pakabomba & Liam Wilson alongside a
           network of artists, cultural practitioners, designers and researchers.
         </p>
+        <p>For enquiries please mail info@sidepattern.com</p>
       </div>
     );
   }

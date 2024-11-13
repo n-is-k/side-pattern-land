@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import React from "react";
 
-function Form() {
+function Popup() {
   const [isLoading, setIsLoading] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const formRef = useRef(null);
@@ -26,54 +26,56 @@ function Form() {
 
   return (
     <>
-      <div className="form">
-        <div className="app--content">
-          {formSubmitted ? (
-            <p className="paragraph">Submitted.</p>
-          ) : (
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              name="google-sheet"
-              className="form"
-            >
-              <input
-                type="text"
-                name="first"
-                autoComplete="off"
-                placeholder="First Name"
-                required
-                className={`field ${isLoading ? "hidden" : ""}`}
-              />
-              <input
-                type="text"
-                name="last"
-                autoComplete="off"
-                placeholder="Last Name"
-                required
-                className={`field ${isLoading ? "hidden" : ""}`}
-              />
-              <input
-                type="email"
-                name="email"
-                autoComplete="off"
-                placeholder="Email"
-                required
-                className={`field ${isLoading ? "hidden" : ""}`}
-              />
-              <button
-                type="submit"
-                name="submit"
-                className="button"
-                disabled={isLoading}
+      <div className="popup">
+        <div className="form">
+          <div className="app--content">
+            {formSubmitted ? (
+              <p className="paragraph">Submitted.</p>
+            ) : (
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                name="google-sheet"
+                className="form"
               >
-                {isLoading ? "Please wait..." : "Submit"}
-              </button>
-            </form>
-          )}
+                <input
+                  type="text"
+                  name="first"
+                  autoComplete="off"
+                  placeholder="First Name"
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+                <input
+                  type="text"
+                  name="last"
+                  autoComplete="off"
+                  placeholder="Last Name"
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="off"
+                  placeholder="Email"
+                  required
+                  className={`field ${isLoading ? "hidden" : ""}`}
+                />
+                <button
+                  type="submit"
+                  name="submit"
+                  className="button"
+                  disabled={isLoading}
+                >
+                  {isLoading ? "Please wait..." : "Submit"}
+                </button>
+              </form>
+            )}
+          </div>
         </div>
       </div>
     </>
   );
 }
-export default Form;
+export default Popup;
