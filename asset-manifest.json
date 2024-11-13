@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24cb58f6.css",
-    "main.js": "/static/js/main.db5cb378.js",
+    "main.css": "/static/css/main.0ac8a5a1.css",
+    "main.js": "/static/js/main.35105f21.js",
     "static/js/787.e9b54d54.chunk.js": "/static/js/787.e9b54d54.chunk.js",
     "static/media/side-spray-tr2.png": "/static/media/side-spray-tr2.b5ef87d1c93bfb037ee7.png",
     "static/media/FragmentMono-Italic.ttf": "/static/media/FragmentMono-Italic.dd408ce5edc9f47abccc.ttf",
@@ -9,12 +9,12 @@
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "static/media/Righteous-Regular.ttf": "/static/media/Righteous-Regular.fd0110471f2228c1808a.ttf",
     "index.html": "/index.html",
-    "main.24cb58f6.css.map": "/static/css/main.24cb58f6.css.map",
-    "main.db5cb378.js.map": "/static/js/main.db5cb378.js.map",
+    "main.0ac8a5a1.css.map": "/static/css/main.0ac8a5a1.css.map",
+    "main.35105f21.js.map": "/static/js/main.35105f21.js.map",
     "787.e9b54d54.chunk.js.map": "/static/js/787.e9b54d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24cb58f6.css",
-    "static/js/main.db5cb378.js"
+    "static/css/main.0ac8a5a1.css",
+    "static/js/main.35105f21.js"
   ]
 }
