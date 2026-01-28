@@ -8,6 +8,8 @@ class TypingText extends React.Component {
 
       <div>
         <TypeWriter typing={1.5} class={"typewriter"}>
+          
+          
           Side Pattern is an art, design & media office based in Amsterdam. It
           advances an approach to art and cultural production that is research
           oriented and people focussed - reflective of over a decade of
@@ -17,7 +19,10 @@ class TypingText extends React.Component {
           New Balance, Daily Paper, Double A Magazine, Nieuwe Instituut, Dutch
           Design Week, Sandberg Instituut, Design Academy Eindhoven, British
           Council, Whitechapel Gallery, University of Bristol & International
-          Curators Forum.
+          Curators Forum. Side Pattern is currently Kirtis Clarke & Liam Wilson alongside a network of artists, cultural practitioners, designers and researchers.
+
+For enquiries please mail info@sidepattern.com
+          
         </TypeWriter>
       </div>
     );
