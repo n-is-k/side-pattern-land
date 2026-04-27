@@ -46,7 +46,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <Popup />
       <Splash className="splash-page" />
       <div className="logo-container">
         {/* <img src={logo} alt="logo" className="app--logo-image" /> */}
@@ -54,6 +53,8 @@ const App = () => {
       <MovingText />
       <Header />
       <Footer />
+      <Popup />
+
       {/* <Form /> */}
     </div>
   );
